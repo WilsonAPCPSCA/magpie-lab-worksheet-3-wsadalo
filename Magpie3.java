@@ -45,6 +45,27 @@ public class Magpie3
 		{
 			response = "Tell me more about your family.";
 		}
+		else if(findKeyword(statement, "cat") >= 0
+				|| findKeyword(statement, "dog") >= 0)
+		{
+			response = "Tell me more about your pets.";
+		}
+		else if(findKeyword(statement, "wong") >= 0)
+		{
+			response = "She sounds like a nice teacher.";
+		}
+		else if(findKeyword(statement, "hi") >= 0)
+		{
+			response = "Hello";
+		}
+		else if(findKeyword(statement, "food") >= 0)
+		{
+			response = "I like pizza.";
+		}
+		else if(findKeyword(statement, "class") >= 0)
+		{
+			response = "Tell me more about your classes.";
+		}
 		else
 		{
 			response = getRandomResponse();
